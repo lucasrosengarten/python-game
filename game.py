@@ -6,7 +6,7 @@ import tkinter
 #...and for creating random numbers.
 import random
 
-#the list of possible colour.
+#the list of possible color.
 colors = ['Red','Blue','Green','Pink','Black','Yellow','Orange','White','Purple','Brown']
 #the player's score, initially 0.
 score=0
@@ -21,10 +21,10 @@ def startGame(event):
         #start the countdown timer.
         countdown()
 
-    #run the function to choose the next colour.
+    #run the function to choose the next color.
     nextColor()
 
-#function to choose and display the next colour.
+#function to choose and display the next color.
 def nextColor():
 
     #use the globally declared 'score' and 'play' variables above.
@@ -75,7 +75,7 @@ root.title("TTCANTW")
 root.geometry("375x200")
 
 #add an instructions label.
-instructions = tkinter.Label(root, text="Type in the colour of the words, and not the word text!", font=('Helvetica', 12))
+instructions = tkinter.Label(root, text="Type in the color of the words, and not the word text!", font=('Helvetica', 12))
 instructions.pack()
 
 #add a score label.
@@ -86,11 +86,11 @@ scoreLabel.pack()
 timeLabel = tkinter.Label(root, text="Time left: " + str(timeleft), font=('Helvetica', 12))
 timeLabel.pack()
 
-#add a label for displaying the colours.
+#add a label for displaying the colors.
 label = tkinter.Label(root, font=('Helvetica', 60))
 label.pack()
 
-#add a text entry box for typing in colours.
+#add a text entry box for typing in colors.
 e = tkinter.Entry(root)
 #run the 'startGame' function when the enter key is pressed.
 root.bind('<Return>', startGame)
